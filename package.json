@@ -1,0 +1,35 @@
+{
+  "name": "sequelazy",
+  "version": "1.0.0",
+  "description": "Add lazy execution callbacks to sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/korynunn/sequelazy.git"
+  },
+  "keywords": [
+    "sequelize",
+    "lazy",
+    "kgo",
+    "customulize"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korynunn/sequelazy/issues"
+  },
+  "homepage": "https://github.com/korynunn/sequelazy",
+  "dependencies": {
+    "customulize": "^1.0.1"
+  },
+  "devDependencies": {
+    "grape": "^1.0.0",
+    "mockery": "^1.4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Kory Nunn"
+}
