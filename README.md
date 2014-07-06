@@ -36,7 +36,7 @@ Adds lazy execution of queries to sequelize via [customulize](https://www.npmjs.
 When using [kgo](https://www.npmjs.org/package/kgo) this is especially convenient.
 
     kgo
-    ('account', Account.lazy.find(null, {where: {id: 1}}))
+    ('account', Account.lazy.find({where: {id: 1}}))
     ('update', ['account'], function(account, done) {
         account.name = 'John';
         account.cps.save(done);
