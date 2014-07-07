@@ -1,9 +1,10 @@
 function createLazyFunction(model, method) {
     return function() {
-        var query = model[method].apply(model, arguments);
+        var args = arguments;
 
-        return function(){
-            return query.complete.apply(query, arguments);
+        return function(callback){
+            var query = model[method].apply(model, args);
+            return query.complete(callback);
         };
     };
 }
