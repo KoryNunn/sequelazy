@@ -4,7 +4,12 @@ function createLazyFunction(model, method) {
 
         return function(callback){
             var query = model[method].apply(model, args);
-            return query.complete(callback);
+
+            if(query.complete){
+                return query.complete(callback);
+            }
+
+            query.then(callback.bind(null, null), callback);
         };
     };
 }

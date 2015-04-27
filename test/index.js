@@ -22,4 +22,5 @@ function createLazyFunction(model, method) {
     };
 }
 
-runTests(test, propertyName, createLazyFunction, successTestLazy, errorTestLazy);
+runTests.sequelizeV1(test, propertyName, createLazyFunction, successTestLazy, errorTestLazy);
+runTests.sequelizeV2(test, propertyName, createLazyFunction, successTestLazy, errorTestLazy);
